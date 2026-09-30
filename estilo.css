@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+#contenedor{
+    width:100%;
+    margin:5px;
+    border:1px solid white;
+    height: 1400px;
+    background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene la galaxia fija mientras haces scroll */
+    min-height: 100vh;
+    color: white
+}
+
+#cabecera{
+    height: 100px;
+    background-color: black;
+    border-bottom:1px solid gray;
+    /*Aplicando Flexbox*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*Posicionamiento fijo*/
+    position: fixed;
+    top:0;
+    left:10px;
+    width:100%;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.5);
+   background-image: url('https://st2.depositphotos.com/3031831/5365/i/450/depositphotos_53655241-stock-photo-black-space-with-many-stars.jpg');}
+
+#titulo{
+    padding:10px;
+    margin-right: 5px;
+    height: 100%;
+    font-family: Helvatica;
+    font-style: italic;
+    text-transform: uppercase;
+    width: 40%;
+    color: white;
+}
+
+h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#titulo  h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-justify: auto;
+    color: yellow;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#menu{
+    width: 60%;
+}
+
+#menu > ul{
+    list-style-type: none;/*oculta viñeta*/
+    /*flexbox para menu*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    height: 100%;    
+}
+
+#menu a{
+    padding:10px;
+    text-transform: uppercase;
+    color: yellow;
+    text-decoration: none;
+}
+/*pseudoclase hover*/
+#menu a:hover{
+    background-color: dimgrey;
+    color:white
+}
+#contenido{
+    scroll-behavior: smooth;  
+    margin-left:20px;
+    margin-top: 100px;/*bajar 100px para dejar la cabecera*/
+}
+#logo{
+    width:40%;    
+}
+#logo img{
+    width:100%;
+    margin:20px
+}
+#seccion{
+    width:100%;
+}
+
+#seccion h3{
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.articulo{
+    margin-top: 20px;
+}
+
+.articulo h3{
+     font-family: "Permanent Marker", cursive;
+     font-size: 25px;
+     color: yellow;
+     letter-spacing: 2px;
+}
+
+.articulo li{
+    font-family: "Knewave", system-ui;
+    font-size: 20px;
+} 
